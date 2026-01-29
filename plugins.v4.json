@@ -29,6 +29,19 @@
         "娱乐"
       ],
       "minVersion": "1.0.0"
+    },
+    {
+      "id": "napcat-plugin-play",
+      "name": "Play 娱乐",
+      "version": "1.0.0",
+      "description": "娱乐插件，meme表情包制作。",
+      "author": "冷曦",
+      "homepage": "https://github.com/lengxi-root/napcat-plugin-play",
+      "downloadUrl": "https://github.com/lengxi-root/napcat-plugin-play/releases/download/latest/napcat-plugin-play.zip",
+      "tags": [
+        "娱乐"
+      ],
+      "minVersion": "1.0.0"
     }
   ]
 }
