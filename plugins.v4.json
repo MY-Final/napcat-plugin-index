@@ -223,6 +223,19 @@
         "哈基米"
       ],
       "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-steam-depot",
+      "name": "AQiaoYo",
+      "version": "1.0.0",
+      "description": "从 GitHub 仓库和 ManifestHub 数据源获取 Steam 游戏的 Manifest 和 Depot 解密密钥，自动生成 Lua 脚本并打包发送到 QQ 群",
+      "author": "鸡太美",
+      "homepage": "https://github.com/AQiaoYo/napcat-plugin-steam-depot",
+      "downloadUrl": "",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
     }
   ]
 }
