@@ -298,7 +298,7 @@
       "name": "泰拉瑞亚灾厄模组Wiki查询",
       "version": "0.1.2",
       "description": "从wiki截取页面",
-      "author": "",
+      "author": "nanting",
       "homepage": "https://github.com/NanTingPer/napcat-terraria-wiki-plugin",
       "downloadUrl": "https://github.com/NanTingPer/napcat-terraria-wiki-plugin/releases/download/v0.1.2/napcat-plugin-terraria-wiki.zip",
       "tags": [
