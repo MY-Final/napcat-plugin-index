@@ -401,6 +401,21 @@ async function main() {
 
     logInfo(`共 ${data.plugins.length} 个插件`);
 
+    // 2.1 Diff 模式下提示不要修改 updateTime，避免 PR 冲突
+    if (isDiff && baseRef) {
+        try {
+            const baseContent = execSync(`git show ${baseRef}:plugins.v4.json`, { encoding: 'utf-8' });
+            const baseData = JSON.parse(baseContent);
+            if (baseData.updateTime) {
+                if (data.updateTime !== baseData.updateTime) {
+                    logWarn('root', `updateTime 请不要在 PR 中修改（base: ${baseData.updateTime}, current: ${data.updateTime || '缺失'}），由仓库 CI 在合并后自动更新`);
+                }
+            }
+        } catch (err) {
+            logWarn('root', `无法读取 base 的 updateTime: ${err.message}`);
+        }
+    }
+
     // 3. 字段校验
     console.log(colors.bold('\n📋 字段校验'));
     for (let i = 0; i < data.plugins.length; i++) {
